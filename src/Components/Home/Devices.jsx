@@ -5,8 +5,12 @@ export default function Devices() {
     <div className=" flex  bg-white items-center  p-6 pr-0  rounded-2xl h-full w-full ">
       <div className=" border-r ">
         <div className=" text-DavyGray flex flex-col gap-2 xl:mr-24 items-start justify-center pl-8 w-[188px] h-[120px]  ">
-          <p className=" leading-[15.6px] text-[12px] xl:text-[14px] ">Consecutive viewers</p>
-          <h1 className=" leading-[44.8px] font-semibold text-[32px] xl:text-[34px] ">535</h1>
+          <p className=" leading-[15.6px] text-[12px] xl:text-[14px] ">
+            Consecutive viewers
+          </p>
+          <h1 className=" leading-[44.8px] font-semibold text-[32px] xl:text-[34px] ">
+            535
+          </h1>
           <div className=" flex gap-1 items-center text-[#37B76C] ">
             <svg
               width="14"
@@ -29,8 +33,12 @@ export default function Devices() {
 
       <div className=" border-r ">
         <div className=" text-DavyGray flex flex-col gap-2 xl:mr-24 items-start justify-center pl-8 w-[188px] h-[120px]  ">
-          <p className=" leading-[15.6px]  text-[12px] xl:text-[14px] ">Watch hour</p>
-          <h1 className=" leading-[44.8px] font-semibold text-[32px] xl:text-[34px] ">6548</h1>
+          <p className=" leading-[15.6px]  text-[12px] xl:text-[14px] ">
+            Watch hour
+          </p>
+          <h1 className=" leading-[44.8px] font-semibold text-[32px] xl:text-[34px] ">
+            6548
+          </h1>
           <div className=" flex gap-1 items-center text-[#E63946] ">
             <svg
               width="14"
@@ -53,7 +61,9 @@ export default function Devices() {
 
       <div className=" border-r ">
         <div className=" text-DavyGray flex flex-col gap-2 xl:mr-20 items-start justify-center pl-8  w-[188px] h-[120px]  ">
-          <p className=" leading-[15.6px] text-[12px] xl:text-[14px] ">Average view time</p>
+          <p className=" leading-[15.6px] text-[12px] xl:text-[14px] ">
+            Average view time
+          </p>
           <h1 className=" leading-[44.8px] font-semibold text-[32px] xl:text-[34px] ">
             32:12
           </h1>
@@ -79,8 +89,12 @@ export default function Devices() {
 
       <div className=" border-r ">
         <div className=" text-DavyGray flex flex-col gap-2 xl:mr-24 items-start justify-center pl-8 w-[188px] h-[120px]  ">
-          <p className=" leading-[15.6px] text-[12px] xl:text-[14px] ">New users</p>
-          <h1 className=" leading-[44.8px] font-semibold text-[32px] xl:text-[34px] ">53</h1>
+          <p className=" leading-[15.6px] text-[12px] xl:text-[14px] ">
+            New users
+          </p>
+          <h1 className=" leading-[44.8px] font-semibold text-[32px] xl:text-[34px] ">
+            53
+          </h1>
           <div className=" flex gap-1 items-center  text-[#E63946] ">
             <svg
               width="14"
@@ -101,8 +115,12 @@ export default function Devices() {
         </div>
       </div>
 
-      <div className=" flex items-center gap-4 pl-8 first-letter: tracking-[0.06em] ">
-        <div>
+      <div className=" flex  items-center gap-4 pl-8 first-letter: tracking-[0.06em] ">
+        <div className=" relative ">
+          <div className="absolute flex top-6 left-[26px] flex-col items-center ">
+            <span className=" text-[18px] font-medium ">1576</span>
+            <span className=" text-[12px] text-[#3A3541] ">Devices</span>
+          </div>
           <svg
             width="100"
             height="100"
@@ -112,7 +130,7 @@ export default function Devices() {
           >
             <path
               d="M81.6089 84.1223C75.5808 89.7064 68.1808 93.594 60.1622 95.3893C52.1435 97.1846 43.7923 96.8236 35.9585 94.3429L40.171 81.0401C45.6546 82.7765 51.5004 83.0292 57.1135 81.7725C62.7266 80.5158 67.9065 77.7945 72.1262 73.8856L81.6089 84.1223Z"
-              fill="#30323D"
+              fill="#E63946"
             />
             <path
               d="M35.2577 5.88511C45.3421 2.51512 56.2767 2.70188 66.2401 6.41428C76.2035 10.1267 84.5943 17.1406 90.0148 26.2878C95.4353 35.4349 97.5582 46.1631 96.03 56.6853C94.5018 67.2075 89.4147 76.8884 81.616 84.1157L72.1312 73.881C77.5903 68.8219 81.1512 62.0452 82.221 54.6797C83.2907 47.3142 81.8047 39.8044 78.0103 33.4014C74.216 26.9984 68.3425 22.0887 61.3681 19.49C54.3937 16.8913 46.7394 16.7606 39.6804 19.1196L35.2577 5.88511Z"
@@ -135,7 +153,7 @@ export default function Devices() {
             <span>Web</span>
           </div>
           <div className=" flex gap-[6px] items-center ">
-            <div className=" w-[10px] h-[10px] rounded-full bg-black "></div>
+            <div className=" w-[10px] h-[10px] rounded-full bg-[#E63946] "></div>
             <span>iOS</span>
           </div>
         </div>
