@@ -73,7 +73,7 @@ export default function Uploads() {
   };
 
   return (
-    <div className=" flex bg-white gap-4 h-full w-full rounded-2xl  ">
+    <div className=" flex bg-white font-Figtree gap-4 h-full w-full rounded-2xl  ">
       <div className=" px-6 ">
         <div className=" flex justify-between py-[14px] items-center border-b ">
           <h1 className="text-2xl  pl-[32px] text-[16px] leading-5 font-semibold ">
