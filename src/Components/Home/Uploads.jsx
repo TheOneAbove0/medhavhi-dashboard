@@ -82,7 +82,9 @@ export default function Uploads() {
           <div className="flex text-[12px]  gap-4">
             <div
               className={`cursor-pointer  ${
-                selectedTab === "Videos" ? "text-Jet buttonColor font-medium " : "text-DavyGray"
+                selectedTab === "Videos"
+                  ? "text-Jet buttonColor font-medium "
+                  : "text-DavyGray"
               }`}
               onClick={() => handleTabClick("Videos")}
             >
@@ -101,19 +103,17 @@ export default function Uploads() {
           </div>
         </div>
 
-        <table className="w-full table-fixed pb-1 border-collapse text-[14px]">
+        <table className="w-full table-fixed pb-1 mt-2 border-collapse text-[14px]">
           <thead>
-            <tr className="bg-white text-SpanishGrey py-2 ">
-              <th className="w-[35px] "></th>
-              <th className="w-[65px] "></th>
-              <th className="w-[8/7] ">Video Details</th>
-              <th className="w-[1/7] p-2">Duration</th>
-              <th className="w-[1/7] p-2">Subject</th>
-              <th className="w-[1/7] p-2">Uploaded on</th>
-              <th className="w-[1/7] p-2">Live Viewer</th>
-              <th className="w-[1/7] p-2">Total Views</th>
-              <th className="w-[1/7] p-2">Average View Time</th>
-              <th className="w-[1/7] p-2">Watch Hours</th>
+            <tr className="bg-white text-SpanishGrey  ">
+              <th className="w-[288px] ">Video Details</th>
+              <th className="w-[1/11] ">Duration</th>
+              <th className="w-[1/7] ">Subject</th>
+              <th className="w-[95px] ">Uploaded on</th>
+              <th className="w-[1/7] ">Live Viewer</th>
+              <th className="w-[1/7] ">Total Views</th>
+              <th className="w-[128px] ">Average View Time</th>
+              <th className="w-[1/7] ">Watch Hours</th>
               <th className="w-[35px] "></th>
             </tr>
           </thead>
@@ -121,32 +121,35 @@ export default function Uploads() {
             {data.map((item, index) => (
               <tr
                 key={index}
-                className={index % 2 === 0 ? "bg-white  text-Jet  " : ""}
+                className={`${index % 2 === 0 ? "bg-white  text-Jet  " : ""} py-4`}
               >
-                <td className="">
-                  <input
-                    className="  w-4 h-4 "
-                    type="checkbox"
-                    checked={selectedRows.includes(index)}
-                    onChange={() => toggleRow(index)}
-                  />
+               
+                <td className=" ">
+                  <div className=" flex items-center gap-4 ">
+                    <input
+                      className="  w-4 h-4 "
+                      type="checkbox"
+                      checked={selectedRows.includes(index)}
+                      onChange={() => toggleRow(index)}
+                    />
+                    <div className=" flex items-center gap-2 ">
+                      <img
+                        src={item.imageUrl}
+                        alt={`study for ${item.title}`}
+                        className="h-[32px] w-[52px] rounded-sm"
+                      />
+                      <span>{item.title}</span>
+                    </div>
+                  </div>
                 </td>
-                <td className="">
-                  <img
-                    src={item.imageUrl}
-                    alt={`study for ${item.title}`}
-                    className="h-[32px] w-[52px] rounded-sm"
-                  />
-                </td>
-                <td className=" ">{item.title}</td>
-                <td className="pl-[60px] py-2">{item.duration}</td>
-                <td className="pl-[60px] py-2">{item.subject}</td>
-                <td className="pl-[60px] py-2">{item.uploadedOn}</td>
-                <td className="pl-[60px] py-2">{item.liveViewer}</td>
-                <td className="pl-[60px] py-2">{item.totalViews}</td>
-                <td className="pl-[60px] py-2">{item.averageViewTime}</td>
-                <td className="pl-[60px] py-2">{item.watchHours}</td>
-                <td className=" py-2">
+                <td className=" 2xl:pl-[85px] py-4 ">{item.duration}</td>
+                <td className=" 2xl:pl-[85px] py-4 ">{item.subject}</td>
+                <td className=" 2xl:pl-[5px] py-4">{item.uploadedOn}</td>
+                <td className=" 2xl:pl-[85px] py-4">{item.liveViewer}</td>
+                <td className=" 2xl:pl-[85px] py-4">{item.totalViews}</td>
+                <td className=" 2xl:pl-[60px] py-4 ">{item.averageViewTime}</td>
+                <td className=" 2xl:pl-[75px] py-4 ">{item.watchHours}</td>
+                <td className="  ">
                   <svg
                     width="32"
                     height="32"
@@ -159,7 +162,7 @@ export default function Uploads() {
                       height="32"
                       rx="2"
                       fill="#9A9A9A"
-                      fill-opacity="0.2"
+                      fillOpacity="0.2"
                     />
                     <path
                       d="M16 13.3333C16.7334 13.3333 17.3334 12.7333 17.3334 12C17.3334 11.2667 16.7334 10.6667 16 10.6667C15.2667 10.6667 14.6667 11.2667 14.6667 12C14.6667 12.7333 15.2667 13.3333 16 13.3333ZM16 14.6667C15.2667 14.6667 14.6667 15.2667 14.6667 16C14.6667 16.7333 15.2667 17.3333 16 17.3333C16.7334 17.3333 17.3334 16.7333 17.3334 16C17.3334 15.2667 16.7334 14.6667 16 14.6667ZM16 18.6667C15.2667 18.6667 14.6667 19.2667 14.6667 20C14.6667 20.7333 15.2667 21.3333 16 21.3333C16.7334 21.3333 17.3334 20.7333 17.3334 20C17.3334 19.2667 16.7334 18.6667 16 18.6667Z"

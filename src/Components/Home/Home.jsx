@@ -8,9 +8,12 @@ import Uploads from "./Uploads";
 export default function Home() {
   return (
     <div className="flex items-start">
-      <SIdebar />
+      <div >
 
-      <div className=" flex flex-col w-[90%] h-[70%] ">
+      <SIdebar />
+      </div>
+
+      <div className=" flex flex-col w-full ">
         <Navbar />
         <div className= "flex flex-col  gap-4 bg-GreyBackground bg-opacity-20 py-4 pb-4 px-6 rounded-md ">
           <Devices />
