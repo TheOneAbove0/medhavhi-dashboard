@@ -50,7 +50,7 @@ export default function Uploads() {
       duration: "64 mins",
       subject: "EPH",
       uploadedOn: "21st Jan 2023",
-      liveViewer: 4,
+      liveViewer: 40,
       totalViews: 746,
       averageViewTime: "35:15 min",
       watchHours: "69hr 42min",
@@ -73,25 +73,25 @@ export default function Uploads() {
   };
 
   return (
-    <div className=" flex bg-white gap-4 h-[284px] w-full rounded-2xl ">
+    <div className=" flex bg-white gap-4 h-full w-full rounded-2xl  ">
       <div className=" px-6 ">
-        <div className=" flex justify-between items-center border-b ">
-          <h1 className="text-2xl py-[14px] pl-[32px] text-[16px] leading-5 font-semibold mb-4">
+        <div className=" flex justify-between py-[14px] items-center border-b ">
+          <h1 className="text-2xl  pl-[32px] text-[16px] leading-5 font-semibold ">
             Latest Uploads
           </h1>
-          <div className="flex gap-4">
+          <div className="flex text-[12px]  gap-4">
             <div
-              className={`font-medium cursor-pointer buttonColor ${
-                selectedTab === "Videos" ? "text-Jet" : "text-DavyGray"
+              className={`cursor-pointer  ${
+                selectedTab === "Videos" ? "text-Jet buttonColor font-medium " : "text-DavyGray"
               }`}
               onClick={() => handleTabClick("Videos")}
             >
               Videos
             </div>
             <div
-              className={`font-medium cursor-pointer ${
+              className={` cursor-pointer ${
                 selectedTab === "Study materials"
-                  ? "buttonColor text-Jet"
+                  ? "buttonColor text-Jet font-medium"
                   : "text-DavyGray"
               }`}
               onClick={() => handleTabClick("Study materials")}
@@ -101,7 +101,7 @@ export default function Uploads() {
           </div>
         </div>
 
-        <table className="w-full table-fixed border-collapse text-[14px]">
+        <table className="w-full table-fixed pb-1 border-collapse text-[14px]">
           <thead>
             <tr className="bg-white text-SpanishGrey py-2 ">
               <th className="w-[35px] "></th>
@@ -114,14 +114,14 @@ export default function Uploads() {
               <th className="w-[1/7] p-2">Total Views</th>
               <th className="w-[1/7] p-2">Average View Time</th>
               <th className="w-[1/7] p-2">Watch Hours</th>
-              <th className="w-[1/7] p-2"></th>
+              <th className="w-[35px] "></th>
             </tr>
           </thead>
           <tbody>
             {data.map((item, index) => (
               <tr
                 key={index}
-                className={index % 2 === 0 ? "bg-white text-Jet  " : ""}
+                className={index % 2 === 0 ? "bg-white  text-Jet  " : ""}
               >
                 <td className="">
                   <input
@@ -138,15 +138,15 @@ export default function Uploads() {
                     className="h-[32px] w-[52px] rounded-sm"
                   />
                 </td>
-                <td className="">{item.title}</td>
-                <td className="pl-[50px] py-2">{item.duration}</td>
-                <td className="pl-[50px] py-2">{item.subject}</td>
-                <td className="pl-[50px] py-2">{item.uploadedOn}</td>
-                <td className="pl-[50px] py-2">{item.liveViewer}</td>
-                <td className="pl-[50px] py-2">{item.totalViews}</td>
-                <td className="pl-[50px] py-2">{item.averageViewTime}</td>
-                <td className="pl-[50px] py-2">{item.watchHours}</td>
-                <td className="pl-[50px] py-2">
+                <td className=" ">{item.title}</td>
+                <td className="pl-[60px] py-2">{item.duration}</td>
+                <td className="pl-[60px] py-2">{item.subject}</td>
+                <td className="pl-[60px] py-2">{item.uploadedOn}</td>
+                <td className="pl-[60px] py-2">{item.liveViewer}</td>
+                <td className="pl-[60px] py-2">{item.totalViews}</td>
+                <td className="pl-[60px] py-2">{item.averageViewTime}</td>
+                <td className="pl-[60px] py-2">{item.watchHours}</td>
+                <td className=" py-2">
                   <svg
                     width="32"
                     height="32"

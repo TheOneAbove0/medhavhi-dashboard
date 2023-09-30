@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Devices() {
   return (
-    <div className=" flex  bg-white items-center  p-6 pr-0  rounded-2xl h-full w-full ">
+    <div className=" flex  bg-white items-center  p-4 pr-0  rounded-2xl h-full w-full ">
       <div className=" border-r ">
         <div className=" text-DavyGray flex flex-col gap-2 xl:mr-24 items-start justify-center pl-8 w-[188px] h-[120px]  ">
           <p className=" leading-[15.6px] text-[12px] xl:text-[14px] ">
@@ -117,9 +117,9 @@ export default function Devices() {
 
       <div className=" flex  items-center gap-4 pl-8 first-letter: tracking-[0.06em] ">
         <div className=" relative ">
-          <div className="absolute flex top-6 left-[26px] flex-col items-center ">
+          <div className="absolute flex top-7 left-[30px] flex-col items-center ">
             <span className=" text-[18px] font-medium ">1576</span>
-            <span className=" text-[12px] text-[#3A3541] ">Devices</span>
+            <span className=" text-[12px] tracking-[-0.042em] text-[#3A3541] ">Devices</span>
           </div>
           <svg
             width="100"

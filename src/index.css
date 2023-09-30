@@ -28,13 +28,13 @@ body::-webkit-scrollbar-thumb {
   list-style: none;
   position: relative;
 }
-.buttonColor:hover::before {
+.buttonColor::before {
   position: absolute;
   content: " ";
   height: 4px;
   width: 100%;
   background: #2bb8d6;
   color: #2bb8d6;
-  right: 0;
+  right: 0px;
   bottom: -20px;
 }
