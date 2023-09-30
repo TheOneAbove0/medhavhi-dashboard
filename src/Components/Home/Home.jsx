@@ -10,9 +10,9 @@ export default function Home() {
     <div className="flex items-start">
       <SIdebar />
 
-      <div className=" flex flex-col w-full ">
+      <div className=" flex flex-col w-[90%] h-[70%] ">
         <Navbar />
-        <div className= "flex flex-col gap-4 bg-GreyBackground bg-opacity-20 py-2 px-6 rounded-md ">
+        <div className= "flex flex-col  gap-4 bg-GreyBackground bg-opacity-20 py-4 pb-4 px-6 rounded-md ">
           <Devices />
           <Performance />
           <Uploads />

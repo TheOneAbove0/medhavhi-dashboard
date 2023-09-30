@@ -2,13 +2,13 @@ import React from "react";
 
 export default function Devices() {
   return (
-    <div className=" flex  bg-white items-center  p-4 pr-0  rounded-2xl h-full w-full ">
+    <div className=" flex font-Figtree bg-white items-center  p-4 pr-0  rounded-2xl h-full w-full ">
       <div className=" border-r ">
         <div className=" text-DavyGray flex flex-col gap-2 xl:mr-24 items-start justify-center pl-8 w-[188px] h-[120px]  ">
           <p className=" leading-[15.6px] text-[12px] xl:text-[14px] ">
             Consecutive viewers
           </p>
-          <h1 className=" leading-[44.8px] font-semibold text-[32px] xl:text-[34px] ">
+          <h1 className=" leading-[44.8px] font-Urbanist font-semibold text-[32px] xl:text-[34px] ">
             535
           </h1>
           <div className=" flex gap-1 items-center text-[#37B76C] ">
@@ -36,7 +36,7 @@ export default function Devices() {
           <p className=" leading-[15.6px]  text-[12px] xl:text-[14px] ">
             Watch hour
           </p>
-          <h1 className=" leading-[44.8px] font-semibold text-[32px] xl:text-[34px] ">
+          <h1 className=" leading-[44.8px] font-Urbanist font-semibold text-[32px] xl:text-[34px] ">
             6548
           </h1>
           <div className=" flex gap-1 items-center text-[#E63946] ">
@@ -64,7 +64,7 @@ export default function Devices() {
           <p className=" leading-[15.6px] text-[12px] xl:text-[14px] ">
             Average view time
           </p>
-          <h1 className=" leading-[44.8px] font-semibold text-[32px] xl:text-[34px] ">
+          <h1 className=" leading-[44.8px] font-Urbanist font-semibold text-[32px] xl:text-[34px] ">
             32:12
           </h1>
           <div className=" flex gap-1 items-center text-[#37B76C] ">

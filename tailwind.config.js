@@ -15,6 +15,11 @@ module.exports = {
 
 
       },
+      fontFamily: {
+        'Urbanist': ['Urbanist', 'sans-serif'],
+        'Figtree': ['Figtree', 'sans-serif'],
+        
+      }
     },
   },
   plugins: [],

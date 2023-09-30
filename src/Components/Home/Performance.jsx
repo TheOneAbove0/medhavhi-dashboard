@@ -1,32 +1,56 @@
-import React from "react";
-import {
-  AreaChart,
-  Area,
-  XAxis,
-  CartesianGrid,
-  Tooltip,
-  ResponsiveContainer,
-} from "recharts";
+import React, { useState } from "react";
+
 
 export default function Performance() {
-  const data = [
-    { Total: 1200 },
-    { Total: 2100 },
-    { Total: 800 },
-    { Total: 1600 },
-    { Total: 900 },
-    { Total: 1700 },
-  ];
+  const [active, setActive] = useState("Class");
+  const [newActive, setNewActive] = useState("Average view");
+
+  const ClickHandler = (status) => {
+    setActive(status);
+  };
+
+  const ClickHandler2 = (status) => {
+    setNewActive(status);
+  };
+
+ 
   return (
-    <div className=" flex gap-4  w-full ">
+    <div className=" flex gap-4 font-Figtree  w-full ">
       <div className=" bg-white rounded-2xl w-3/5 h-[340px]  ">
         <div className=" flex flex-col  ">
           <div className=" flex justify-between items-center py-[14px] px-[32px] border-b  ">
-            <div className=" font-semibold text-[16px]   ">Performance</div>
-            <div className=" flex items-center text-[14px]  gap-6 ">
-              <span className=" buttonColor">Average view</span>
-              <span className=" buttonColor">Consecutive viewers</span>
-              <span className=" buttonColor">Watch hour</span>
+            <div className=" font-semibold text-[14px]   ">Performance</div>
+            <div className="flex items-center text-[12px] gap-6">
+              <span
+                className={` cursor-pointer ${
+                  newActive === "Average view"
+                    ? "text-Jet buttonColor font-medium"
+                    : "text-DavyGray"
+                }`}
+                onClick={() => ClickHandler2("Average view")}
+              >
+                Average view
+              </span>
+              <span
+                className={`font-medium cursor-pointer ${
+                  newActive === "Consecutive viewers"
+                    ? "text-Jet buttonColor font-medium"
+                    : "text-DavyGray"
+                }`}
+                onClick={() => ClickHandler2("Consecutive viewers")}
+              >
+                Consecutive viewers
+              </span>
+              <span
+                className={`font-medium cursor-pointer ${
+                  newActive === "Watch hour"
+                    ? "text-Jet buttonColor font-medium"
+                    : "text-DavyGray"
+                }`}
+                onClick={() => ClickHandler2("Watch hour")}
+              >
+                Watch hour
+              </span>
             </div>
           </div>
 
@@ -61,34 +85,7 @@ export default function Performance() {
 
           <div className=" relative ">
             <div className=" absolute right-[320px] top-[-60px]  w-[600px] h-[300px] ">
-              <ResponsiveContainer width="100%" aspect={2 / 1}>
-                <AreaChart
-                  width={730}
-                  height={100}
-                  data={data}
-                  margin={{ top: 0, right: 0, left: 0, bottom: 0 }}
-                >
-                  <defs>
-                    <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="0%" stopColor="#2BB8D6" stopOpacity={0.6} />
-                      <stop offset="100%" stopColor="#2BB8D6" stopOpacity={0} />
-                    </linearGradient>
-                  </defs>
-
-                  <CartesianGrid
-                    className=" stroke-white "
-                    strokeDasharray="3 3"
-                  />
-                  <Tooltip />
-                  <Area
-                    type="monotone"
-                    dataKey="Total"
-                    stroke="#8884d8"
-                    fillOpacity={1}
-                    fill="url(#colorUv)"
-                  />
-                </AreaChart>
-              </ResponsiveContainer>
+             
             </div>
           </div>
         </div>
@@ -96,16 +93,43 @@ export default function Performance() {
 
       <div className="flex flex-col bg-white rounded-2xl w-2/5 h-[340px]  ">
         <div className=" flex justify-between items-center px-6 border-b py-[14px] ">
-          <div className=" font-semibold text-[16px] ">Scheduled</div>
-          <div className=" flex gap-4 text-DavyGray text-[14px] ">
-            <div className="buttonColor ">Videos</div>
-            <div className=" text-jet buttonColor font-medium">Class</div>
-            <div className=" buttonColor ">Events</div>
+          <div className=" font-semibold text-[14px] ">Scheduled</div>
+          <div className=" flex gap-4 text-DavyGray text-[12px] ">
+            <div
+              onClick={() => {
+                ClickHandler("Videos");
+              }}
+              className={`font-medium cursor-pointer  ${
+                active === "Videos" ? "text-Jet buttonColor" : "text-DavyGray"
+              }`}
+            >
+              Videos
+            </div>
+            <div
+              onClick={() => {
+                ClickHandler("Class");
+              }}
+              className={`font-medium cursor-pointer ${
+                active === "Class" ? "text-Jet buttonColor" : "text-DavyGray"
+              } `}
+            >
+              Class
+            </div>
+            <div
+              onClick={() => {
+                ClickHandler("Events");
+              }}
+              className={`font-medium cursor-pointer ${
+                active === "Events" ? "text-Jet buttonColor" : "text-DavyGray"
+              } `}
+            >
+              Events
+            </div>
           </div>
         </div>
 
-        <div className=" flex relative flex-col gap-1 ml-4 pl-4 mt-2 pt-2 border-l-8 rounded-l-lg border-primaryColor ">
-        <div className="absolute right-6 top-4">
+        <div className=" flex relative flex-col gap-1 ml-4 pl-4 mt-2 pt-2 border-l-4 rounded-l-lg border-primaryColor ">
+          <div className="absolute right-6 top-4">
             <svg
               width="4"
               height="14"
@@ -119,7 +143,7 @@ export default function Performance() {
               />
             </svg>
           </div>
-          <h1 className=" font-semibold text-[16px] leading-5  ">
+          <h1 className=" font-semibold text-[14px] leading-5  ">
             Doubt clearance class{" "}
           </h1>
           <span>Dec 20 2022, 1:00 Pm - 3:30 Pm</span>
@@ -219,7 +243,7 @@ export default function Performance() {
           </div>
         </div>
 
-        <div className=" flex relative flex-col gap-1 ml-4 pl-4 mt-2 pt-2 border-l-8 rounded-l-lg border-primaryColor ">
+        <div className=" flex relative flex-col gap-1 ml-4 pl-4 mt-2 pt-2 border-l-4 rounded-l-lg border-[#37B76C] ">
           <div className="absolute right-6 top-4">
             <svg
               width="4"
@@ -234,7 +258,7 @@ export default function Performance() {
               />
             </svg>
           </div>
-          <h1 className=" font-semibold text-[16px] leading-5  ">Q&A class</h1>
+          <h1 className=" font-semibold text-[14px] leading-5  ">Q&A class</h1>
           <span>Dec 20 2022, 1:00 Pm - 3:30 Pm</span>
           <div className=" flex items-center gap-4 ">
             <span className=" text-[#EA526F]  ">Science</span>
@@ -332,6 +356,8 @@ export default function Performance() {
           </div>
         </div>
       </div>
+
+      
     </div>
   );
 }
