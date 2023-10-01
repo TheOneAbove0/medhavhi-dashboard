@@ -103,17 +103,17 @@ export default function Uploads() {
           </div>
         </div>
 
-        <table className="w-full table-fixed pb-1 mt-2 border-collapse text-[14px]">
+        <table className="w-full table-fixed pb-1 mt-2 border-collapse text-[12px]">
           <thead>
             <tr className="bg-white text-SpanishGrey  ">
               <th className="w-[288px] ">Video Details</th>
-              <th className="w-[1/11] ">Duration</th>
-              <th className="w-[1/7] ">Subject</th>
+              <th className="w-[63px] ">Duration</th>
+              <th className="w-[79px] ">Subject</th>
               <th className="w-[95px] ">Uploaded on</th>
-              <th className="w-[1/7] ">Live Viewer</th>
-              <th className="w-[1/7] ">Total Views</th>
+              <th className="w-[79px] ">Live Viewer</th>
+              <th className="w-[95px] ">Total Views</th>
               <th className="w-[128px] ">Average View Time</th>
-              <th className="w-[1/7] ">Watch Hours</th>
+              <th className="w-[116px] ">Watch Hours</th>
               <th className="w-[35px] "></th>
             </tr>
           </thead>
@@ -142,12 +142,12 @@ export default function Uploads() {
                     </div>
                   </div>
                 </td>
-                <td className=" 2xl:pl-[85px] py-4 ">{item.duration}</td>
-                <td className=" 2xl:pl-[85px] py-4 ">{item.subject}</td>
-                <td className=" 2xl:pl-[5px] py-4">{item.uploadedOn}</td>
-                <td className=" 2xl:pl-[85px] py-4">{item.liveViewer}</td>
-                <td className=" 2xl:pl-[85px] py-4">{item.totalViews}</td>
-                <td className=" 2xl:pl-[60px] py-4 ">{item.averageViewTime}</td>
+                <td className=" 2xl:pl-[35px] pl-[5px] py-4 ">{item.duration}</td>
+                <td className=" 2xl:pl-[55px] pl-[15px] py-4 ">{item.subject}</td>
+                <td className=" 2xl:pl-[55px] py-4">{item.uploadedOn}</td>
+                <td className=" 2xl:pl-[55px] py-4 pl-[20px]">{item.liveViewer}</td>
+                <td className=" 2xl:pl-[55px] py-4 pl-[20px]">{item.totalViews}</td>
+                <td className=" 2xl:pl-[70px] py-4 pl-[20px] ">{item.averageViewTime}</td>
                 <td className=" 2xl:pl-[75px] py-4 ">{item.watchHours}</td>
                 <td className="  ">
                   <svg
