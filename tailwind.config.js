@@ -12,6 +12,8 @@ module.exports = {
         GreyBackground:"#9A9A9A",
         DavyGray:" #565659",
        SpanishGrey:' #9A9A9A',
+       BGreen:' #37B76C',
+       LighRed:'#EA526F'
 
 
       },

@@ -13,7 +13,7 @@ export default function Home() {
       <SIdebar />
       </div>
 
-      <div className=" flex flex-col w-full h-full ">
+      <div className=" flex flex-col ml-[13.06rem] w-full h-full ">
         <Navbar />
         <div className= "flex flex-col pb-14  gap-4 bg-GreyBackground bg-opacity-20 py-4 2xl:pb-4 px-6 rounded-md ">
           <Devices />

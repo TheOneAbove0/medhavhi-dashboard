@@ -12,6 +12,20 @@ const IMAGES = {
   Logout: require(".//logout.svg").default,
   AddCirCle: require("./add-circle.svg").default,
   Notification: require("./notifications.svg").default,
+  ArrowLeft: require("./arrow-left.svg").default,
+  IconGreen: require("./Icon.svg").default,
+  IconRed: require("./icon-red.svg").default,
+  Download: require("./Download.svg").default,
+  VecTor3: require(".//Vector 3.svg").default,
+  IconDown: require(".//IconDown.svg").default,
+  ThreeDot: require("./ThreeDot.svg").default,
+  Videoplayer: require("./VIdeoplayer.png"),
+  PdfAvatar: require("./PdfAvatar.png"),
+  PptAvatar: require("./PptAvatar.png"),
+  WordAvatar: require("./WordAvatar.png"),
+  Ellipse5:require("./Ellipse 5.png"),
+  Ellipse6: require("./Ellipse 6.png"),
+  Wallpaper: require("./Wallpaper.png"),
 };
 
 export default IMAGES;
