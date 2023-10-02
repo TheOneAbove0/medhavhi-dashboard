@@ -13,8 +13,10 @@ module.exports = {
         DavyGray:" #565659",
        SpanishGrey:' #9A9A9A',
        BGreen:' #37B76C',
-       LighRed:'#EA526F'
-
+       LighRed:'#EA526F',
+       NewGreen:'#22BF90',
+       Disable:'#9A9A9A'
+       
 
       },
       fontFamily: {

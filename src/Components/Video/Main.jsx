@@ -50,7 +50,7 @@ export default function Main() {
     {memoizedActiveItem === 'Overview'&& <Overview />}
      {memoizedActiveItem === 'Resources' && <Resources />}
         {memoizedActiveItem === 'Doubts'&& <Doubts />}
-        <Doubts />
+        
     </div>
   );
 }

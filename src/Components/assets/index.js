@@ -19,6 +19,7 @@ const IMAGES = {
   VecTor3: require(".//Vector 3.svg").default,
   IconDown: require(".//IconDown.svg").default,
   ThreeDot: require("./ThreeDot.svg").default,
+  GreenUp: require("./GreenUP.svg").default,
   Videoplayer: require("./VIdeoplayer.png"),
   PdfAvatar: require("./PdfAvatar.png"),
   PptAvatar: require("./PptAvatar.png"),
@@ -26,6 +27,8 @@ const IMAGES = {
   Ellipse5:require("./Ellipse 5.png"),
   Ellipse6: require("./Ellipse 6.png"),
   Wallpaper: require("./Wallpaper.png"),
+  Comment: require("./comment.png"),
+
 };
 
 export default IMAGES;
