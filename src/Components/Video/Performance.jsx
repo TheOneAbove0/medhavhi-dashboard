@@ -1,19 +1,12 @@
 import React, { useState } from "react";
 
-
 export default function Performance() {
-  const [active, setActive] = useState("Class");
   const [newActive, setNewActive] = useState("Average view");
-
-  const ClickHandler = (status) => {
-    setActive(status);
-  };
 
   const ClickHandler2 = (status) => {
     setNewActive(status);
   };
 
- 
   return (
     <div className=" flex gap-4 font-Figtree  w-full  ">
       <div className=" bg-white rounded-2xl w-full h-[340px]  ">
@@ -83,17 +76,9 @@ export default function Performance() {
             </svg>
           </div>
 
-          <div className=" relative ">
-            <div className=" absolute right-[320px] top-[-60px]  w-[600px] h-[300px] ">
-             
-            </div>
-          </div>
+          
         </div>
       </div>
-
-      
-
-      
     </div>
   );
 }

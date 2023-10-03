@@ -14,7 +14,7 @@ export default function Sidebar() {
 
   return (
     <div
-      className="w-[209px] h-[100vh] fixed top-0 left-0 bg-white flex flex-col overflow-auto"
+      className="w-[209px]  fixed top-0 left-0 bg-white flex flex-col overflow-auto"
      
     >
       <div className="w-44 mx-auto py-6">
@@ -24,7 +24,7 @@ export default function Sidebar() {
         />
       </div>
 
-      <div className="text-Jet flex flex-col gap-1 flex-1">
+      <div className="text-Jet mb-[254.89px] flex flex-col gap-1 flex-1">
         {menuItems.map((menuItem, index) => (
           <div
             key={index}
